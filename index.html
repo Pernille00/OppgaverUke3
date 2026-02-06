@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MinKalkulator</title>
+</head>
+<body>
+    <h1>Kalkulator</h1>
+    <br>
+    <div id="number"></div>
+    <button onclick="addTwo()">Pluss 2</button>
+    <button onclick="subtractFive()">Minus 5</button>
+    <br>
+    <button onclick="miltiplyByThree()">Gange 3</button>
+    <button onclick="divideByFour()">Delt på 4</button>
+
+    <script>
+        let text = 'Mitt Tall: ';
+        let tall = 0;
+
+        updateNumber();
+        
+        function updateNumber(){
+            document.getElementById('number').innerHTML = text + tall;
+
+        }
+
+        function addTwo(){
+            tall = tall + 2;
+            updateNumber();
+        }
+
+        function subtractFive(){
+            tall = tall - 5;
+            updateNumber();
+        }
+
+        function miltiplyByThree(){
+            tall = tall * 3;
+            updateNumber();
+        }
+
+        function divideByFour(){
+            tall = tall / 4;
+            updateNumber()
+        }
+    </script>
+
+
+</body>
+</html>

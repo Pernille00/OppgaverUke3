@@ -1,0 +1,30 @@
+       body {
+            background-color: rgba(249, 139, 139, 0.957);
+            font-family: 'Times New Roman', Times, serif;
+            
+        }
+
+
+        .headline{
+            color: brown;
+            text-align: center;
+        }
+        .list{
+            background-color: brown;
+            border: solid black 2px;
+            border-radius: 20px;
+            display:block;
+        }
+        .lightColor{
+            background-color: lightgray 
+        }
+    
+        .hidden{
+            display:none;
+        }
+
+        .img{
+            height: 300px;
+            width: 200px;
+        }
+            

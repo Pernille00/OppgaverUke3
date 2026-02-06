@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+<meta charset="UTF-8">
+<title>Kalkulator</title>
+</head>
+
+<body>
+
+<h2>Multiplikasjonskalkulator</h2>
+
+<input type="number" placeholder="Tall 1" onchange="setNumber1(this.value)">
+
+<input type="number" placeholder="Tall 2" onchange="setNumber2(this.value)">
+
+<button onclick="multiply()">Regn ut</button>
+
+<p id="result"></p>
+
+<script>
+
+let number1 = 0;
+let number2 = 0;
+
+// Her bruker vi parameter fra input (this.value)
+function setNumber1(value) {
+    number1 = Number(value);
+}
+
+function setNumber2(value) {
+    number2 = Number(value);
+}
+
+// Selve funksjonen som regner
+function multiply() {
+
+    let result = number1 * number2;
+
+    document.getElementById("result").innerHTML =
+        number1 + " x " + number2 + " = " + result;
+}
+
+</script>
+
+</body>
+</html>
